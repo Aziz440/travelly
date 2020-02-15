@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+}
+header {
+  background-image: url("img/bg.jpg");
+  height: 600px; /**/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+nav {
+  justify-content: space-between;
+  padding-top: 30px;
+}
+nav i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.title {
+  flex-direction: column;
+  margin-top: 215px;
+}
+.title h1 {
+  font: 300 52px "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+}
+.title form {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.title input {
+  height: 36px;
+  width: 325px;
+  padding-left: 15px;
+  font-family: "Open Sans";
+}
+
+.title button {
+  width: 120px;
+  background-color: #fd4f32;
+  color: #fff;
+  border: 0;
+  font-family: "Open Sans";
+  cursor: pointer;
+}
+#iki {
+  background-color: #eee;
+}
+#iki .container {
+  flex-direction: column;
+}
+#iki h3 {
+  font: 400 16px "Montserrat", sans-serif;
+  letter-spacing: 0;
+  color: #323232;
+  padding-top: 57px;
+}
+#iki .container > p {
+  font: 400 15px "Open Sans", sans-serif;
+  letter-spacing: 0;
+  color: #8b8b8b;
+  margin-top: 15px;
+}
+#dests {
+  display: flex;
+}
+.price {
+  position: relative;
+}
+.price span {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: #fff;
+}
+
+.dest h4 {
+  font: 700 14px "Montserrat", sans-serif;
+  letter-spacing: 0;
+  color: #323232;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 996px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #dests {
+    flex-direction: column;
+  }
+  #dests img {
+    width: 100%;
+  }
+}
